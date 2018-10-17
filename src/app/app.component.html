@@ -1,6 +1,20 @@
-<div class="jumbotron text-center">
-  <h1>{{testBinding}}</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-<input type="text" class="form-control" [(ngModel)]="testBinding">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="./sample-one" routerLinkActive="active">Sample One</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="sample-two" routerLinkActive="active">Sample Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"[routerLink]="['check-services']" routerLinkActive="active">Check Services</a>
+        </li>
+      </ul>
+    
+    </nav>
+<router-outlet></router-outlet>

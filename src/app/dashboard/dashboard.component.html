@@ -1,0 +1,17 @@
+
+
+  <div>
+      <h3>{{testBinding}}</h3>
+    </div>
+    
+    <input type="text" class="form-control" [(ngModel)]="testBinding">
+    <h3>Enter Route Name</h3>
+    <input type="text" class="form-control" [(ngModel)]="routeName">
+    <button (click)="routeNavigate(routeName)">Route by Navigate method</button>
+
+  <!-- <app-sample-one [testValue]="testBinding" (dataChanged)="dataAdded($event)">
+
+  <p>From App Componnet to Sample One Compoenet usin ng-content Directive</p>
+ </app-sample-one>
+
+<app-services-check></app-services-check> -->

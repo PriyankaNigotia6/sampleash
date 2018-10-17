@@ -1,0 +1,57 @@
+
+<h3 *ngIf="testValue === 'Test 1'; else elseone" [align]="alighH1">{{testValue}}</h3>
+<h3>{{testObject.key1}}</h3>
+<h3>{{testObject.key3array}}</h3>
+
+<!-- <input [(ngModel)]="testValue" (keyup)="onChangeTestValue($event)"> -->
+<input [value]="testValue" (keyup)="onChangeTestValue($event)">
+<button (click)="accessData()" >{{testValue}}</button>
+
+<ng-template #elseone>
+    <p [ngStyle]="{backgroundColor:changeStyleH1()}">{{testValue}}</p>
+</ng-template>
+
+<div *ngFor="let name of names; let i = index">
+    {{name + ' ' + i}}
+
+</div>
+<ng-content></ng-content> 
+
+<input #checkRefrence (click)="sendRefence(checkRefrence)">
+
+<p sampleDirective>Check Directive Color to Green backgroundColor</p>
+
+<p advanceSampleDirective [defaultColor]="'pink'" changedColor="magenta">Change Element style using Renderer 2</p>
+
+<p *appOwnIf="true" >Own If Condition Working</p>
+
+<div [ngSwitch]="switchValue">
+    <div *ngSwitchCase="5">No 5</div>
+    <div *ngSwitchCase="3">No 3</div>
+    <div *ngSwitchCase="2">Showning ONly 2</div>
+
+
+</div>
+
+<p>
+    {{eventServiceData}}
+</p>
+<!-- Relative Path added to the Current Path -->
+<li><a routerLink="sample-one">Sample One Route NOT WORKING</a></li>
+<!-- Aboulute Path -->
+<li><a routerLink="/sample-one">Sample One Route</a></li>
+<!-- Aboulute Path Current Level -->
+<li><a routerLink="./sample-one">Sample One Route Current Level</a></li>
+<!-- Aboulute Path One level Above -->
+<li><a routerLink="../sample-one">Sample One Route One Level Above</a></li>
+
+<button (click)="routeNavigate('/sample-one')">Route by Navigate method</button>
+
+
+
+
+
+
+
+
+
