@@ -41,11 +41,11 @@ Task
 	✓	Use components
 	✓	Inline template vs template url
 	✓	Add Styles using stylesUrls array
-	✓	Use selector as elements, attributes & class
+	✓	Use selector as elements, attributes &    class
 ========data binding=========
-		Data Binding:
-		String interpolation
-		Property binding
+	✓	Data Binding:
+	✓	String interpolation
+	✓	Property binding
 	✓	Es 6 arrow function
 	✓	Event binding
 	✓	2 way data binding
@@ -55,19 +55,20 @@ Task
 	✓	Ngstyles
 	✓	Ngfor
 =======Debugging=========
-	✓	Breakpoints by DC>Sources>Webpack>.>src
-	✓	Sourcemaps concept
-	✓	Augury
+		Breakpoints by DC>Sources>Webpack>.>src
+		Sourcemaps concept
+		Augury
 ==Advance Components==DB====
-	✓	Component communication
-	✓	components:custom property binding
-	✓	@input()
-	✓	Property alias
-	✓	@output
-	✓	View Encapsulation using shadow dom but as all browser dont implement it that’s why angular emulates it
-	✓	Configuring view Encapsulation
-	✓	Local references in template to get html element & pass it to the method from template as it is accessible to complete template
-	✓	Access Local references through @ viewchild decorator to get native html element
+		Component communication
+		Getter and Setter 
+		components:custom property binding
+		@input()
+		Property alias
+		@output
+		View Encapsulation using shadow dom but as all browser dont implement it that’s why angular emulates it
+		Configuring view Encapsulation
+		Local references in template to get html element & pass it to the method from template as it is accessible to complete template
+		Access Local references through @ viewchild decorator to get native html element
 	✓	Ngcontent directive to projected complete html
 	◦	Lifecycle implements all  events & check there availability: check it later
 =======Directives===========
